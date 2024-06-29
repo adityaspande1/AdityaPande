@@ -5,7 +5,23 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      animation: {
+        shim: 'shimmer 2s linear infinite',
+        
+      },
+      keyframes: {
+        shimmer: {
+          from: {
+            'background-position': '0% 0%',
+          },
+          to: {
+            'background-position': '-200% 0%',
+          },
+        },
+        
+      },
+    },
   },
   plugins: [],
 }
