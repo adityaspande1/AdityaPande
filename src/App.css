@@ -14,7 +14,12 @@
 margin-left: 31%;
 
 }
-
+.tech-container{
+  margin-top:20%;
+}
+.tech-skill{
+  margin-top: 10%;
+}
 
 @keyframes wave-animation {
     0% { transform: rotate( 0.0deg) }

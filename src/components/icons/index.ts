@@ -1,0 +1,15 @@
+export { default as Jscript } from './Jscript';
+export { default as Cpp } from './Cpp';
+export { default as Java } from './Java';
+// export { default as Prisma } from './Prisma';
+export { default as Python } from './Python';
+export { default as Typescript } from './Typescript';
+export { default as Docker } from './docker';
+export { default as Express } from './express';
+export { default as Git } from './git';
+export { default as MongoDb } from './mongoDb';
+export { default as Node } from './node';
+export { default as Postgress } from './postgress';
+export { default as React } from './react';
+export { default as Tailwind } from './tailwind';
+export {default as Android} from './Android';
