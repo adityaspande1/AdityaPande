@@ -8,6 +8,7 @@ export type SkillPullProps = {
   icon: JSX.Element;
 };
 console.log(Languages);
+console.log("This is skill")
 
 function SkillPull(props:SkillPullProps) {
   // const { name, icon } = props;

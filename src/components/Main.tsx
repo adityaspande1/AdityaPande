@@ -1,7 +1,7 @@
 import React from 'react'
 import NpxButton from './NpxButton'
 import Skill from './Skill'
-import Project from './Project'
+import Projects from './Projects'
 
 export default function Main() {
   return (
@@ -14,7 +14,8 @@ export default function Main() {
     <NpxButton/>
    </div>
    <Skill/>
-   <Project/>
+
+   <Projects/>
   
 </>
     
