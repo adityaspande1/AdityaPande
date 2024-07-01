@@ -5,6 +5,7 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
+   
     extend: {
       animation: {
         shim: 'shimmer 2s linear infinite',

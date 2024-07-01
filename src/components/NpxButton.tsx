@@ -10,7 +10,7 @@ import { ClipboardCopyIcon } from 'lucide-react';
 export default function NpxButton() {
     const handleClick = () => {
         navigator.clipboard.writeText('npx adityaPande');
-        toast('Text has been copied');
+        toast('Make sure to run in your terminal 😄!');
       };
   return (
     <>
@@ -23,7 +23,7 @@ export default function NpxButton() {
          bg-[length:200%_100%] font-medium text-slate-400 transition-colors 
          focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2
           focus:ring-offset-slate-50 gap-2
-          mt-10  -ml-40 mr-12 mb-30"
+          mt-10  -ml-40 mr-12 mb-40"
     >
       <pre>npx adityaPande</pre> <ClipboardCopyIcon />
     </button></>
