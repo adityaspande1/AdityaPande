@@ -1,6 +1,6 @@
 import { Toaster,toast } from 'sonner';
 import { ClipboardCopyIcon } from 'lucide-react';
-
+import {easeOut, motion} from "framer-motion"
 // function handleClick() {
 //   navigator.clipboard.writeText('npx adityaPande');
 //     toast('Text has been copied');
@@ -15,7 +15,7 @@ export default function NpxButton() {
   return (
     <>
      <Toaster/>
-    <button
+    <motion.button
       onClick={handleClick}
       className=" shim-button inline-flex py-2 px-2 sm:py-4 md:py-6 sm:px-7 md:px-9 animate-shim
        items-center text-2xl justify-center rounded-md
@@ -23,10 +23,17 @@ export default function NpxButton() {
          bg-[length:200%_100%] font-medium text-slate-400 transition-colors 
          focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2
           focus:ring-offset-slate-50 gap-2
-          mt-10  -ml-40 mr-12 mb-40"
+          mt-10  -ml-40 mr-12 mb-40
+          "
+          whileHover={{scale:1.05}}
+          whileTap={{scale:0.95}}
+          initial={{opacity:0,y:50}}
+          animate={{opacity:1,y:0}}
+          transition={{duration:0.7,ease:easeOut}}
+
     >
       <pre>npx devaditya</pre> <ClipboardCopyIcon />
-    </button></>
+    </motion.button></>
    
   )
 }

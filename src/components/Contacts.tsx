@@ -2,6 +2,7 @@ import React from 'react'
 import {Linkedin,TwitterIcon,MailIcon,GithubIcon} from 'lucide-react';
 import {SiLeetcode,SiCodechef} from "react-icons/si";
 import { CiLinkedin } from "react-icons/ci";
+import {motion} from "framer-motion";
 export const Contacts = () => {
   return (
     <div className='text-white mt-10 bg-black px-10 mb-10'>
