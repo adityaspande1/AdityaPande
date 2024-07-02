@@ -9,7 +9,7 @@ import { ClipboardCopyIcon } from 'lucide-react';
 
 export default function NpxButton() {
     const handleClick = () => {
-        navigator.clipboard.writeText('npx adityaPande');
+        navigator.clipboard.writeText('npx devaditya');
         toast('Make sure to run in your terminal 😄!');
       };
   return (
@@ -25,7 +25,7 @@ export default function NpxButton() {
           focus:ring-offset-slate-50 gap-2
           mt-10  -ml-40 mr-12 mb-40"
     >
-      <pre>npx adityaPande</pre> <ClipboardCopyIcon />
+      <pre>npx devaditya</pre> <ClipboardCopyIcon />
     </button></>
    
   )
