@@ -6,7 +6,7 @@ export const About = () => {
         <h1 className=' tech-skill text-6xl font-bold text-center align-cente  '>About Me</h1>
         <div className='flex mt-10 px-20 gap-[40px]'>
             <div className='left-div px-20'>
-                <img src={"public/profile.jpeg"} className='border border-white rounded-3xl h-[370px] w-[300px]'/>
+                <img src={"/profile.jpeg"} className='border border-white rounded-3xl h-[370px] w-[300px]'/>
             </div>
             <div className='right-div bg-black-400 text-xl  margin-auto w-[600px] '>
                 <p>I am Aditya Pande, pursuing my B.Tech in Computer Science.
