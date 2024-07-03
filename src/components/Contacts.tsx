@@ -1,5 +1,5 @@
-import React from 'react'
-import {Linkedin,TwitterIcon,MailIcon,GithubIcon} from 'lucide-react';
+
+import {MailIcon,GithubIcon} from 'lucide-react';
 import {SiLeetcode,SiCodechef} from "react-icons/si";
 import { CiLinkedin } from "react-icons/ci";
 import {motion} from "framer-motion";
@@ -27,7 +27,7 @@ export const Contacts = () => {
         <h3 className="text-xl sm:text-2xl md:text-3xl font-bold dark:text-white text-center pt-5">
           Mail me here
         </h3>
-        <a
+        <motion.a
           target="_blank"
           href="mailto:adityaspande1@gmail.com"
           className="text-center flex items-center gap-1"
@@ -36,7 +36,7 @@ export const Contacts = () => {
             adityaspande1@gmail.com
           </span>
           <MailIcon className="dark:text-white" size={25} />
-        </a>
+        </motion.a>
       </div>
       <div className="flex flex-col items-center">
             <h3 className="text-xl sm:text-2xl md:text-3xl font-bold dark:text-white text-center pt-5">

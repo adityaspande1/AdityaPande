@@ -1,4 +1,4 @@
-import React, { FC, useState } from "react";
+import { FC, useState } from "react";
 import { FaGithub, FaGlobe } from "react-icons/fa";
 import { motion, AnimatePresence } from "framer-motion";
 

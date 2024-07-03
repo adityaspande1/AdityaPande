@@ -1,8 +1,8 @@
-import { useState } from 'react'
+
 import Navbar from './components/Navbar';
 import './App.css';
 import Main from './components/Main';
-import Skill from './components/Skill';
+
 
 function App() {
   return (
