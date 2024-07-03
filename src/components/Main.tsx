@@ -1,4 +1,4 @@
-import React from 'react'
+
 import NpxButton from './NpxButton';
 import Skill from './Skill';
 import Projects from './Projects';
