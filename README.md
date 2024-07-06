@@ -33,4 +33,5 @@ export default {
 ## Tech Stack
   -React.js
   -Typescript
+  -Tailwind
   
