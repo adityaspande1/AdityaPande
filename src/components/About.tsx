@@ -3,13 +3,13 @@
 export const About = () => {
   return (
     <div className='text-white  bg-black'>
-        <h1 className=' tech-skill text-6xl font-bold text-center align-cente  '>About Me</h1>
-        <div className='flex mt-10 px-20 gap-[40px]'>
-            <div className='left-div px-20'>
-                <img src={"/profile.jpeg"} className='border border-white rounded-3xl h-[370px] w-[300px]'/>
+        <h1 className=' tech-skill text-5xl sm:text-6xl font-bold text-center align-cente  '>About Me</h1>
+        <div className='block  sm:flex mt-10 px-20 gap-[40px] sm:content-center'>
+            <div className='left-div  mb-10 sm:px-20'>
+                <img src={"/profile.jpeg"} className='border border-white rounded-3xl sm:h-[370px] sm:w-[300px]'/>
             </div>
-            <div className='right-div bg-black-400 text-xl  margin-auto w-[600px] '>
-                <p>I am Aditya Pande, pursuing my B.Tech in Computer Science.
+            <div className='right-div bg-black-400 sm:text-xl  margin-auto sm:w-[600px]  '>
+                <p className="">I am Aditya Pande, pursuing my B.Tech in Computer Science.
                      I am a Full Stack Developer based in India and have been coding since 2022.
                       Since my childhood, I have had a huge interest in technology. 
                       Channeling this interest towards computer science has been a good decision for me as I learn something new about technology every day. </p><br></br>
