@@ -17,7 +17,7 @@ export const Contacts = () => {
               target="_blank"
               href={'https://www.linkedin.com/in/aditya-pande-716862213/'}
               className="text-center flex items-center gap-1"
-            ><span className="dark:text-white text-2xl">
+            ><span className="dark:text-white sm:text-2xl">
            linkedin.com/in/aditya-pande-716862213/
           </span>
           <CiLinkedin className="dark:text-white" size={30} />
@@ -32,7 +32,7 @@ export const Contacts = () => {
           href="mailto:adityaspande1@gmail.com"
           className="text-center flex items-center gap-1"
         >
-          <span className="dark:text-white text-2xl">
+          <span className="dark:text-white sm:text-2xl">
             adityaspande1@gmail.com
           </span>
           <MailIcon className="dark:text-white" size={25} />
@@ -47,7 +47,7 @@ export const Contacts = () => {
               href="https://github.com/adityaspande1"
               className="text-center flex items-center gap-1"
             >
-              <span className="dark:text-white text-2xl">
+              <span className="dark:text-white sm:text-2xl">
                 github.com/adityaspande1
               </span>
               <GithubIcon className="dark:text-white" size={25} />
