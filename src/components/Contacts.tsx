@@ -7,7 +7,7 @@ export const Contacts = () => {
   return (
     <div className='text-white mt-10 bg-black px-10 mb-10'>
     <h1 className='text-6xl font-bold text-center justify-center align-center '>Contact Me</h1>
-    <div className="grid grid-cols-1 md:grid-cols-2 bg-[#eee] dark:bg-[#111] rounded w-full md:rounded-xl py-10 m-1 border-2 dark:border-white border-black mt-10">
+    <div className="grid grid-cols-1 md:grid-cols-2 bg-black bg-[#eee] dark:bg-[#111] rounded w-full md:rounded-xl py-10 m-1 border-2 dark:border-white border-black mt-10">
           
           <div className="flex flex-col items-center">
             <h3 className="text-xl sm:text-2xl md:text-3xl font-bold dark:text-white text-center pt-5">

@@ -40,25 +40,25 @@ export default function Skill() {
         <h2 className='text-3xl mt-[20px] text-center'>
             Programming Languages
         </h2>
-        <div className="mt-2 flex flex-wrap justify-center gap-5 text-xl dark:text-zinc-100 mt-[15px]">
+        <div className="mt-2 flex flex-wrap justify-center gap-5 text-xl text-zinc-800 dark:text-zinc-100 mt-[15px]">
             {Languages.map(renderSkills)}
         </div>
         <h2 className='text-3xl mt-20 text-center'>
             Databases
         </h2>
-        <div className="mt-2 flex flex-wrap justify-center gap-5 text-xl dark:text-zinc-100">
+        <div className="mt-2 flex flex-wrap justify-center gap-5 text-xl text-zinc-800 dark:text-zinc-100">
           {Databaases.map(renderSkills)}
         </div>
         <h2 className='text-3xl mt-20 text-center'>
             Frameworks
         </h2>
-        <div className="mt-2 flex flex-wrap justify-center gap-5 text-xl dark:text-zinc-100">
+        <div className="mt-2 flex flex-wrap justify-center gap-5 text-xl text-zinc-800 dark:text-zinc-100">
           {Frameworks.map(renderSkills)}
         </div>
         <h2 className='text-3xl mt-20 text-center'>
             Technologies
         </h2>
-        <div className="mt-2 flex flex-wrap justify-center gap-5 text-xl dark:text-zinc-100">
+        <div className="mt-2 flex flex-wrap justify-center gap-5 text-xl text-zinc-800 dark:text-zinc-100">
           {Technologies.map(renderSkills)}
         </div>
     </div>

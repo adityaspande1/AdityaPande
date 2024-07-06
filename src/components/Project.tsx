@@ -19,7 +19,7 @@ const Project: FC<ProjectProps> = (project) => {
       <motion.div
         layoutId={project.name}
         key={project.name}
-        className="flex flex-col gap-4 rounded-[0.875rem] dark:text-white shadow-[6px_6px_0px_1px_#000000a6] dark:shadow-[6px_6px_0px_1px_#ffffffa6] bg-neutral-100 dark:bg-black border-white transition-colors duration-150 border p-2 md:p-3 max-w-sm cursor-pointer"
+        className="flex flex-col gap-4 rounded-[0.875rem] text-black dark:text-white shadow-[6px_6px_0px_1px_#000000a6] dark:shadow-[6px_6px_0px_1px_#ffffffa6] bg-neutral-100 dark:bg-black border-white transition-colors duration-150 border p-2 md:p-3 max-w-sm cursor-pointer"
         onClick={() => setSelectedId(project.name)}
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
@@ -77,7 +77,7 @@ const Project: FC<ProjectProps> = (project) => {
             exit={{ opacity: 0 }}
           >
             <motion.div
-              className="bg-white dark:bg-black p-4 rounded-lg max-w-lg w-full"
+              className="bg-white text-black dark:bg-black p-4 rounded-lg max-w-lg w-full"
               onClick={(e) => e.stopPropagation()} // Prevent closing when clicking inside the modal
             >
               <div className="relative flex overflow-hidden rounded-lg object-contain h-fit mb-4">
