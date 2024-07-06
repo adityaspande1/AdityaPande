@@ -10,8 +10,8 @@ export default function Main() {
   return (
     <>
   <Element name="Home">
-    <motion.div className=' place-content-center text-white text-center mt-60 w-full content-center '>
-    <motion.h1 className=' hi-heading flex bg text-7xl  subpixel-antialiased font-bold justify '
+    <motion.div className=' place-content-center text-white text-center mt-20 sm:mt-60 w-full content-center sm: text-xl'>
+    <motion.h1 className=' hi-heading flex bg text-7xl  subpixel-antialiased font-bold justify sm:text-7xl '
     initial={{ opacity: 0, y: 50 }}
     animate={{ opacity: 1, y: 0 }}
     transition={{ duration: 0.7, ease: 'easeOut' }}>Hi <span className="wave">👋</span></motion.h1><br></br>
