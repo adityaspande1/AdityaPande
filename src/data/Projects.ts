@@ -22,7 +22,7 @@ const projects=[{
     description:" The project deals with the task of redundancy removal and geospatial indexing.This project was build for the SIF hackathon. ",
     techStack:["/Logos/html.svg","/Logos/css.svg","/Logos/python-5.svg",
     "/Logos/flask.svg"],
-    githubLink:"https://github.com/suyogparkhi/IISF_Bug_bunnies",
+    githubLink:"https://github.com/adityaspande1/IISF_Bug_bunnies/tree/patch-1",
     
 },
 {
