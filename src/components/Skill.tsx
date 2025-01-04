@@ -35,7 +35,7 @@ export default function Skill() {
     
   );
   return (
-    <div className='tech-container text-white mt-55 bg-black'>
+    <div className='tech-container text-white mt-55 '>
         <h1 className=' tech-skill text-6xl font-bold text-center align-center '>Technical Skills</h1>
         <h2 className='text-3xl mt-[20px] text-center'>
             Programming Languages

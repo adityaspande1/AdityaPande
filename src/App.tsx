@@ -1,16 +1,17 @@
-
 import Navbar from './components/Navbar';
-import './App.css';
 import Main from './components/Main';
-
+import './App.css';
 
 function App() {
   return (
-    <div className=" bg-black absolute inset-0 h-max w-full opacity-97 bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)] bg-[size:24px_24px]]">
-      <Navbar/>
-      <Main/>
+    <div className="min-h-screen bg-black">
+      <div className="absolute inset-0 bg-grid">
+        <Navbar />
+        <Main />
+      </div>
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
+
