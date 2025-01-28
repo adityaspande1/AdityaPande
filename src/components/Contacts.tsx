@@ -42,7 +42,7 @@ export const Contacts: React.FC = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
           <ContactItem
             title="LinkedIn"
-            link="https://www.linkedin.com/in/aditya-pande-716862213/"
+            link="https://www.linkedin.com/in/aditya-s-pande"
             icon={<CiLinkedin size={30} />}
           />
           <ContactItem
