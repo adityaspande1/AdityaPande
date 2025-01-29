@@ -91,7 +91,7 @@ const Project: FC<ProjectProps> = (project) => {
               </div>
               <div className="flex flex-col gap-2 px-4 py-2">
                 <div className="flex justify-between items-center mb-4">
-                  <h2 className="font-medium text-xl underline inline-flex gap-1 items-center tracking-tighter text-[clamp(.875rem,5vw,1.125rem)] leading-none ">
+                  <h2 className="font-medium text-xl underline inline-flex gap-1 items-center tracking-tighter text-[clamp(.875rem,5vw,1.125rem)] leading-none text-white ">
                     {project.name}
                   </h2>
                   <div className="flex justify-between items-center gap-4 text-sm">
@@ -109,7 +109,7 @@ const Project: FC<ProjectProps> = (project) => {
                     )}
                   </div>
                 </div>
-                <p className="text-[clamp(.75rem,1.5vw,.875rem)] line-clamp-2 max-w-xs">
+                <p className="text-[clamp(.75rem,1.5vw,.875rem)] line-clamp-2 max-w-xs text-white">
                   {project.description}
                 </p>
                 <div className="flex gap-3 items-center">

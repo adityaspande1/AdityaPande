@@ -6,6 +6,7 @@ import { Element } from 'react-scroll';
 import { About } from './About';
 import {motion} from "framer-motion";
 
+
 export default function Main() {
   return (
     <div className="bg-black bg-grid"> {/* Added wrapper div with bg-grid class */}
@@ -34,6 +35,8 @@ export default function Main() {
       <Element name="About" className=''>
         <About/>
       </Element>
+
+
       <Element name="Skills">
         <Skill/>
       </Element>

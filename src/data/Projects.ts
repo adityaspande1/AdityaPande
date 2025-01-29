@@ -1,6 +1,12 @@
 
 
 const projects=[{
+    name:"WorkSpaceTracker-Vscode Extension",
+    thumbnail:"/projects/workspace.png",
+    description:"This extension helps in tracking code in workspace.",
+    techStack:["/Logos/typescript.svg"],
+    liveLink:"https://marketplace.visualstudio.com/items?itemName=AdityaPande.codetracker",
+},{
     name:"GDSC Landing Page",
     thumbnail:"/projects/Gdsc.jpeg",
     description:"This is a simple GDSC Landing page",
