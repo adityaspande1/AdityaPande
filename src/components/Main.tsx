@@ -3,7 +3,7 @@ import Skill from './Skill';
 import Projects from './Projects';
 import { Contacts } from './Contacts';
 import { Element } from 'react-scroll';
-import { About } from './About';
+import MacBookSafari from './About';
 import {motion} from "framer-motion";
 
 
@@ -33,7 +33,7 @@ export default function Main() {
         </motion.div>
       </Element>
       <Element name="About" className=''>
-        <About/>
+        <MacBookSafari/>
       </Element>
 
 
