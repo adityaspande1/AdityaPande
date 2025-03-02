@@ -1,7 +1,7 @@
 import React from 'react';
 import { Element, Link } from 'react-scroll';
 import { motion } from 'framer-motion';
-import { Terminal, Code, Github, Linkedin, Mail, ExternalLink, Link2 } from 'lucide-react';
+import { Terminal, Code, Github, Linkedin, Mail, Link2 } from 'lucide-react';
 import NpxButton from './NpxButton';
 import Skill from './Skill';
 import Projects from './Projects';
