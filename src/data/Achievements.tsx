@@ -7,7 +7,7 @@ export const achievements = [
       year: "DEC 2024",
       rank: "Top 5 In India",
       icon: <Award className="text-[#10b981] mb-2" size={24} />,
-      description: "Built a real-time collaboration tool using WebSocket and React, beating 50+ teams.",
+      description: "Built a Few Shot Language Agnostic Keyword Spotting System",
       status: "completed"
     },
     {
@@ -16,7 +16,7 @@ export const achievements = [
       year: "JAN 2024",
       rank: "Top 50 in India",
       icon: <Award className="text-[#10b981] mb-2" size={24} />,
-      description: "Contributed to React.js core, with 100+ PRs merged and 1000+ commits.",
+      description: "Built a data-redundancy removal tool using python and flask framework for BHUVAN Platform.",
       status: "completed"
     },
     {
@@ -25,7 +25,7 @@ export const achievements = [
       year: " Mar 2024",
       rank: "Top 5 out of 30 teams",
       icon: <Award className="text-[#10b981] mb-2" size={24} />,
-      description: "Solved 500+ problems, ranked in top 5% globally with expertise in dynamic programming.",
+      description: "Built an Android App for public safety.",
       status: "completed"
     }
   ];
