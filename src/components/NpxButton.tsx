@@ -1,40 +1,26 @@
-import { Toaster,toast } from 'sonner';
-import { ClipboardCopyIcon } from 'lucide-react';
-import {easeOut, motion} from "framer-motion"
-// function handleClick() {
-//   navigator.clipboard.writeText('npx adityaPande');
-//     toast('Text has been copied');
-  
-// }
+import  { useState } from 'react';
+import { Terminal,Clipboard } from 'lucide-react';
 
 export default function NpxButton() {
-    
-  return (
-    <>
-     <Toaster/>
-    <motion.button
-      onClick={() => {
-        navigator.clipboard.writeText('npx devaditya');
-        toast('Make sure to run in your terminal 😄!');
-      }}
-      className=" shim-button inline-flex py-2 px-2 sm:py-4 md:py-6 sm:px-7 md:px-9 animate-shim
-       items-center text-2xl justify-center rounded-md
-        border border-slate-800 bg-[linear-gradient(110deg,#000103,45%,#1e2631,55%,#000103)]
-         bg-[length:200%_100%] font-medium text-slate-400 transition-colors 
-         focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2
-          focus:ring-offset-slate-50 gap-2
-          mt-10  sm:-ml-40 mr-12 mb-40
-          ml-10
-          "
-          whileHover={{scale:1.05}}
-          whileTap={{scale:0.95}}
-          initial={{opacity:0,y:50}}
-          animate={{opacity:1,y:0}}
-          transition={{duration:0.7,ease:easeOut}}
+  const [copied, setCopied] = useState(false);
+  const npxCommand = 'npx devaditya';
 
+  const copyToClipboard = () => {
+    navigator.clipboard.writeText(npxCommand);
+    setCopied(true);
+    setTimeout(() => setCopied(false), 2000);
+  };
+
+  return (
+    <button 
+      onClick={copyToClipboard}
+      className="code-button flex items-center group"
     >
-      <pre>npx devaditya</pre> <ClipboardCopyIcon />
-    </motion.button></>
-   
-  )
+      <Terminal size={16} className="mr-2" />
+      <span className="font-mono">{npxCommand}</span>
+      <span className="ml-2 text-xs opacity-0 group-hover:opacity-100 transition-opacity">
+        {copied ? 'Copied!' : <Clipboard size={20} />}
+      </span>
+    </button>
+  );
 }

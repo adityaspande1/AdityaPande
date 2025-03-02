@@ -1,51 +1,43 @@
-
-
-const projects=[{
-    name:"WorkSpaceTracker-Vscode Extension",
-    thumbnail:"/projects/workspace.png",
-    description:"This extension helps in tracking code in workspace.",
-    techStack:["/Logos/typescript.svg"],
-    liveLink:"https://marketplace.visualstudio.com/items?itemName=AdityaPande.codetracker",
-},{
-    name:"GDSC Landing Page",
-    thumbnail:"/projects/Gdsc.jpeg",
-    description:"This is a simple GDSC Landing page",
-    techStack:["/Logos/html.svg","/Logos/css.svg","/Logos/javascript.svg"],
-    githubLink:"https://github.com/adityaspande1/GDSC_RCOEM",
-    liveLink:"https://adityaspande1.github.io/GDSC_RCOEM/",
-},
-{
-    name:"Portfolio",
-    thumbnail:"/projects/Portfolio.jpeg",
-    description:"This is my personal Portfolio  page",
-    techStack:["/Logos/react.svg","/Logos/typescript.svg","/Logos/tailwind.svg"],
-    githubLink:"https://github.com/adityaspande1/AdityaPande",
-    liveLink:"https://adityaspande1.github.io/GDSC_RCOEM/",
-},
-{
-    name:"SIF-Project",
-    thumbnail:"/projects/SIF.jpeg",
-    description:" The project deals with the task of redundancy removal and geospatial indexing.This project was build for the SIF hackathon. ",
-    techStack:["/Logos/html.svg","/Logos/css.svg","/Logos/python-5.svg",
-    "/Logos/flask.svg"],
-    githubLink:"https://github.com/adityaspande1/IISF_Bug_bunnies/tree/patch-1",
-    
-},
-{
-    name:"Weather App",
-    thumbnail:"/projects/weather.jpeg",
-    description:"This is a weather website which is based on Open weather API",
-    techStack:["/Logos/react.svg","/Logos/api.svg"],
-    githubLink:"https://github.com/adityaspande1/weather-app1",
-    liveLink:"https://weather-app1-lovat.vercel.app/",
-},
-{
-    name:"Gym",
-    thumbnail:"/projects/Gym.jpg",
-    description:"This is a simple Gym website",
-    techStack:["/Logos/html.svg","/Logos/css.svg","/Logos/javascript.svg"],
-    githubLink:"https://github.com/adityaspande1/Gym-website",
-    liveLink:"https://adityaspande1.github.io/Gym-website/",
-},
-];
+const projects = [{
+    title: "WorkSpaceTracker-Vscode Extension",
+    image: "/projects/workspace.png",
+    description: "This extension helps in tracking code in workspace. It has more than 60 users.",
+    tags: ["TYPESCRIPT","Yeoman","Octokit(Github Api)"],
+    github: "https://marketplace.visualstudio.com/items?itemName=AdityaPande.codetracker",
+    demo:"https://work-space-tracker.vercel.app/",
+}, {
+    title: "GDSC Landing Page",
+    image: "/projects/Gdsc.jpeg",
+    description: "This is a simple GDSC Landing page",
+    tags: ["HTML", "CSS", "JAVASCRIPT"],
+    github: "https://github.com/adityaspande1/GDSC_RCOEM",
+    demo: "https://adityaspande1.github.io/GDSC_RCOEM/",
+}, {
+    title: "Portfolio",
+    image: "/projects/Portfolio.jpeg",
+    description: "This is my personal Portfolio page",
+    tags: ["REACT", "TYPESCRIPT", "TAILWIND"],
+    // github: "https://github.com/adityaspande1/AdityaPande",
+    demo: "https://aditya-pande.vercel.app/",
+}, {
+    title: "SIF-Project",
+    image: "/projects/SIF.jpeg",
+    description: "The project deals with the task of redundancy removal and geospatial indexing. This project was built for the SIF hackathon.",
+    tags: ["HTML", "CSS", "PYTHON", "FLASK"],
+    github: "https://github.com/adityaspande1/IISF_Bug_bunnies/tree/patch-1",
+}, {
+    title: "Weather App",
+    image: "/projects/weather.jpeg",
+    description: "This is a weather website which is based on Open weather API",
+    tags: ["REACT", "API"],
+    github: "https://github.com/adityaspande1/weather-app1",
+    demo: "https://weather-app1-lovat.vercel.app/",
+}, {
+    title: "Gym",
+    image: "/projects/Gym.jpg",
+    description: "This is a simple Gym website",
+    tags: ["HTML", "CSS", "JAVASCRIPT"],
+    github: "https://github.com/adityaspande1/Gym-website",
+    demo: "https://adityaspande1.github.io/Gym-website/",
+}];
 export default projects;
