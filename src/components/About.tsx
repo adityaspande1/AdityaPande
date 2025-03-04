@@ -34,10 +34,9 @@ class DeveloperJourney {
 
   public getCurrentFocus(): Record<string, string> {
     return {
-      technical: "Exploring WebAssembly and edge computing",
+      technical: "Exploring Cloud technologies and Devops",
       personal: "Building open-source tools for developers",
       learning: "Diving deeper into systems design and scalability",
-      community: "Contributing to developer education resources"
     };
   }
 
