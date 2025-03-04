@@ -20,7 +20,7 @@ class DeveloperJourney {
   }
 
   private initializeJourney(): void {
-    console.log("Journey started: Wrote my first line of in Nov 2022");
+    console.log("Journey started: Wrote my first line of code in Nov 2022");
   }
 
   public getMotivation(): string[] {
