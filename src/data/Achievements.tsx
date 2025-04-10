@@ -27,5 +27,14 @@ export const achievements = [
       icon: <Award className="text-[#10b981] mb-2" size={24} />,
       description: "Built an Android App for public safety.",
       status: "completed"
+    },
+    {
+      id: 4,
+      title:"HackByte 3.0",
+      year:"April 2025",
+      rank:"Top 50 in India",
+      icon: <Award className="text-[#10b981] mb-2" size={24} />,
+      description:"Built a Defi maker using Aptos Blockchain.",
+      status: "completed"
     }
   ];

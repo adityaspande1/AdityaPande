@@ -1,4 +1,13 @@
+
+
 const projects = [{
+    title:"Move Matrix",
+    image:"/projects/move-matrix.png",
+    description:" Build, validate, and deploy complex DeFi strategies with simple building blocks",
+    tags:["Tyepescript","Next.js","Tailwind","APTOS CLI","MongoDB","MOVE"],
+    github:"https://github.com/adityaspande1/move-matrix-final",
+    demo:"https://devfolio.co/projects/move-matrix-1b6f",
+},{
     title: "WorkSpaceTracker-Vscode Extension",
     image: "/projects/workspace.png",
     description: "This extension helps in tracking code in workspace. It has more than 60 users.",
