@@ -1,6 +1,13 @@
 
 
 const projects = [{
+        title:"Craftify",
+        image:"/projects/Craftify.png",
+        description:"Craftify helps you create stunning UI components with zero effort",
+        tags:["Next.js","TYPESCRIPT","TAILWIND CSS"],
+        github:"https://github.com/adityaspande1/Craftify",
+        demo:"https://craftify-eight.vercel.app/",
+    },{
     title:"Move Matrix",
     image:"/projects/move-matrix.png",
     description:" Build, validate, and deploy complex DeFi strategies with simple building blocks",
