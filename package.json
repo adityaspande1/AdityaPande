@@ -21,7 +21,8 @@
     "react-router-dom": "^6.24.0",
     "react-scroll": "^1.9.0",
     "react-syntax-highlighter": "^15.6.1",
-    "sonner": "^1.5.0"
+    "sonner": "^1.5.0",
+    "vite-plugin-eslint": "^1.8.1"
   },
   "devDependencies": {
     "@types/d3": "^7.4.3",

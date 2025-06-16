@@ -2,7 +2,7 @@ import React from 'react';
 import { Element, Link } from 'react-scroll';
 import { motion } from 'framer-motion';
 import { Terminal, Code, Github, Linkedin, Mail, Link2 } from 'lucide-react';
-import NpxButton from './NpxButton';
+// import NpxButton from './NpxButton';
 import Skill from './Skill';
 import Projects from './Projects';
 import { Contacts } from './Contacts';
@@ -41,64 +41,200 @@ export default function Main() {
       </nav>
 
       <Element name="Home">
-        <div className="pt-24 pb-16 md:pt-32 md:pb-24">
-          <motion.div className='container mx-auto px-4 text-white text-center mt-20 sm:mt-40 w-full content-center sm:text-xl'>
-            <div className="terminal max-w-3xl mx-auto">
-              <div className="terminal-header">
-                <div className="terminal-button terminal-button-red"></div>
-                <div className="terminal-button terminal-button-yellow"></div>
-                <div className="terminal-button terminal-button-green"></div>
-                <div className="ml-4 text-xs text-gray-300">bash - aditya@dev:~</div>
-              </div>
-              <div className="terminal-body text-left p-6">
-                <div className="mb-4">
-                  <span className="prompt">aditya@dev:~$</span> <span className="text-white">whoami</span>
-                </div>
-                <motion.h1 
-                  className='text-4xl md:text-7xl font-bold mb-2'
-                  initial={{ opacity: 0, y: 50 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 0.7, ease: 'easeOut' }}
-                >
-                  Hi <span className="wave">👋</span>
-                </motion.h1>
-                <motion.h1 
-                  className="text-4xl md:text-7xl font-bold mb-6"
-                  initial={{ opacity: 0, y: 50 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 0.7, ease: 'easeOut', delay: 0.2 }}
-                >
-                  I'm <span className='text-[#38bdf8]'>Aditya Pande</span>
-                </motion.h1>
+        <div className="relative min-h-screen flex items-center justify-center overflow-hidden bg-[#0f172a]">
+          {/* Animated Background */}
+          <div className="absolute inset-0">
+            <div className="absolute inset-0 bg-grid opacity-10"></div>
+            <div className="absolute inset-0 bg-gradient-to-b from-[#38bdf8]/5 via-transparent to-[#818cf8]/5"></div>
+            
+            {/* Animated Particles */}
+            <div className="absolute inset-0">
+              {[...Array(20)].map((_, i) => (
                 <motion.div
+                  key={i}
+                  className="absolute w-1 h-1 bg-[#38bdf8] rounded-full"
+                  style={{
+                    left: `${Math.random() * 100}%`,
+                    top: `${Math.random() * 100}%`,
+                  }}
+                  animate={{
+                    y: [0, -100],
+                    opacity: [0, 1, 0],
+                  }}
+                  transition={{
+                    duration: Math.random() * 3 + 2,
+                    repeat: Infinity,
+                    delay: Math.random() * 2,
+                  }}
+                />
+              ))}
+            </div>
+          </div>
+
+          {/* Main Content */}
+          <div className="container mx-auto px-4 relative z-10">
+            <div className="grid lg:grid-cols-12 gap-8 items-center">
+              {/* Left Column - Main Content */}
+              <motion.div
+                initial={{ opacity: 0, y: 30 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8 }}
+                className="lg:col-span-7 text-white"
+              >
+                <motion.div
+                  initial={{ opacity: 0, x: -20 }}
+                  animate={{ opacity: 1, x: 0 }}
+                  transition={{ delay: 0.2 }}
+                  className="inline-flex items-center px-4 py-2 rounded-full bg-[#064e3b]/30 backdrop-blur-sm border border-[#10b981]/30 mb-8"
+                >
+                  <span className="w-2 h-2 rounded-full bg-[#10b981] mr-2 animate-pulse"></span>
+                  <span className="text-[#10b981] font-mono text-sm">Available for opportunities</span>
+                </motion.div>
+
+                <motion.h1
+                  className="text-6xl md:text-8xl font-bold mb-6 leading-tight"
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ delay: 0.3 }}
+                >
+                  <span className="block text-transparent bg-clip-text bg-gradient-to-r from-[#38bdf8] via-[#818cf8] to-[#38bdf8] animate-gradient">
+                    Hi I'm
+                  </span>
+                  <span className="block mt-2 text-white">Aditya Pande</span>
+                </motion.h1>
+
+                <motion.div
+                  className="text-xl md:text-2xl text-gray-300 mb-8"
                   initial={{ opacity: 0 }}
                   animate={{ opacity: 1 }}
-                  transition={{ duration: 0.7, delay: 0.4 }}
-                  className="text-xl md:text-2xl text-gray-300 mb-8"
+                  transition={{ delay: 0.4 }}
                 >
                   <TypedText />
                 </motion.div>
-                <div className="mt-8">
-                  <span className="prompt">aditya@dev:~$</span> <span className="text-white">./connect.sh</span>
-                  <div className="mt-4 flex flex-wrap justify-center gap-4">
-                    <NpxButton />
-                    <NavLink to='Projects'> 
-                      <div className="code-button flex items-center">
-                      <Code size={16} className="mr-2" /> View Projects
+
+                <motion.div
+                  className="flex flex-wrap gap-4"
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ delay: 0.5 }}
+                >
+                  <NavLink to="Projects">
+                    <div className="group relative px-8 py-4 bg-[#1e293b] rounded-lg overflow-hidden transition-all duration-300 hover:bg-[#334155]">
+                      <div className="absolute inset-0 bg-gradient-to-r from-[#38bdf8] to-[#818cf8] opacity-0 group-hover:opacity-10 transition-opacity"></div>
+                      <div className="relative flex items-center">
+                        <Code size={20} className="mr-2 text-[#38bdf8]" />
+                        <span>Explore Projects</span>
                       </div>
-                     
-                    </NavLink>
-                    <NavLink to="Contactme">
-                      <div className="code-button flex items-center">
-                      <Link2 size={16} className="mr-2" /> Get in Touch
+                    </div>
+                  </NavLink>
+                  <NavLink to="Contactme">
+                    <div className="group relative px-8 py-4 bg-[#1e293b] rounded-lg overflow-hidden transition-all duration-300 hover:bg-[#334155]">
+                      <div className="absolute inset-0 bg-gradient-to-r from-[#38bdf8] to-[#818cf8] opacity-0 group-hover:opacity-10 transition-opacity"></div>
+                      <div className="relative flex items-center">
+                        <Link2 size={20} className="mr-2 text-[#38bdf8]" />
+                        <span>Let's Connect</span>
                       </div>
-                
-                    </NavLink>
-                  </div>
+                    </div>
+                  </NavLink>
+                </motion.div>
+
+                {/* Social Links with Hover Effects */}
+                <motion.div
+                  className="flex gap-6 mt-8"
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1 }}
+                  transition={{ delay: 0.6 }}
+                >
+                  {[
+                    { icon: Github, href: "https://github.com/adityaspande1", label: "GitHub" },
+                    { icon: Linkedin, href: "https://linkedin.com/in/aditya-s-pande", label: "LinkedIn" },
+                    { icon: Mail, href: "mailto:adityaspande1@gmail.com", label: "Email" }
+                  ].map((social, index) => (
+                    <motion.a
+                      key={index}
+                      href={social.href}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="group relative"
+                      whileHover={{ scale: 1.1 }}
+                      whileTap={{ scale: 0.95 }}
+                    >
+                      <div className="relative p-3 rounded-full bg-[#1e293b] border border-[#334155] group-hover:border-[#38bdf8] transition-colors">
+                        <social.icon size={20} className="text-gray-400 group-hover:text-[#38bdf8] transition-colors" />
+                      </div>
+                      <span className="absolute -bottom-8 left-1/2 transform -translate-x-1/2 text-xs text-gray-400 opacity-0 group-hover:opacity-100 transition-opacity">
+                        {social.label}
+                      </span>
+                    </motion.a>
+                  ))}
+                </motion.div>
+              </motion.div>
+
+              {/* Right Column - MacBook Style Terminal */}
+              <motion.div
+                initial={{ opacity: 0, x: 50 }}
+                animate={{ opacity: 1, x: 0 }}
+                transition={{ duration: 0.8 }}
+                className="lg:col-span-5 hidden lg:block"
+              >
+                <div className="relative perspective-1000">
+                  <motion.div
+                    className="terminal bg-[#1e293b]/90 backdrop-blur-sm border border-[#334155] rounded-lg  transform-gpu"
+                    style={{
+                      transform: "rotateY(-10deg) rotateX(5deg)",
+                      transformStyle: "preserve-3d",
+                    }}
+                    whileHover={{
+                      rotateY: -5,
+                      rotateX: 2,
+                      transition: { duration: 0.3 },
+                    }}
+                  >
+                    <div className="terminal-header mb-4 flex items-center justify-between">
+                      <div className="flex gap-2">
+                        <div className="w-3 h-3 rounded-full bg-red-500"></div>
+                        <div className="w-3 h-3 rounded-full bg-yellow-500"></div>
+                        <div className="w-3 h-3 rounded-full bg-green-500"></div>
+                      </div>
+                      <div className="text-xs text-gray-400 flex items-center">
+                        <Terminal size={12} className="mr-1.5 text-[#38bdf8]" />
+                        portfolio.sh - ~/projects/portfolio
+                      </div>
+                    </div>
+                    <div className="terminal-body space-y-3">
+                      <div className="flex items-center">
+                        <span className="text-[#38bdf8]">$</span>
+                        <span className="ml-2 text-gray-300">./start.sh</span>
+                      </div>
+                      <div className="space-y-2">
+                        {[
+                          "Loading portfolio...",
+                          "Initializing components...",
+                          "Setting up animations...",
+                          "Ready to explore!"
+                        ].map((text, index) => (
+                          <motion.div
+                            key={index}
+                            className="text-gray-400 text-sm"
+                            initial={{ opacity: 0, x: -20 }}
+                            animate={{ opacity: 1, x: 0 }}
+                            transition={{ delay: 0.5 + index * 0.2 }}
+                          >
+                            <span className="text-[#38bdf8]">[✓]</span>{" "}
+                            <TypingText text={text} delay={0.5 + index * 0.2} />
+                          </motion.div>
+                        ))}
+                      </div>
+                    </div>
+                  </motion.div>
+                  
+                  {/* Decorative Elements */}
+                  <div className="absolute -top-4 -right-4 w-24 h-24 bg-[#38bdf8]/10 rounded-full blur-2xl"></div>
+                  <div className="absolute -bottom-4 -left-4 w-32 h-32 bg-[#818cf8]/10 rounded-full blur-2xl"></div>
                 </div>
-              </div>
+              </motion.div>
             </div>
-          </motion.div>
+          </div>
         </div>
       </Element>
 
@@ -201,4 +337,31 @@ function TypedText() {
       {showCursor && <span className="cursor">|</span>}
     </div>
   );
+}
+
+function TypingText({ text, delay = 0 }: { text: string; delay?: number }) {
+  const [displayText, setDisplayText] = React.useState('');
+  const [currentIndex, setCurrentIndex] = React.useState(0);
+
+  React.useEffect(() => {
+    if (currentIndex < text.length) {
+      const timeout = setTimeout(() => {
+        setDisplayText(prev => prev + text[currentIndex]);
+        setCurrentIndex(prev => prev + 1);
+      }, 50);
+      
+      return () => clearTimeout(timeout);
+    }
+  }, [currentIndex, text]);
+
+  React.useEffect(() => {
+    const timeout = setTimeout(() => {
+      setCurrentIndex(0);
+      setDisplayText('');
+    }, delay * 1000);
+    
+    return () => clearTimeout(timeout);
+  }, [delay]);
+
+  return <span>{displayText}</span>;
 }
